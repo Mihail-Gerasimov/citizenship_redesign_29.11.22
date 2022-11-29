@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миграционный Центр Помощи</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Inter', sans-serif; -->
+
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/media.min.css">
+
+</head>
+
+<body>
+
+    <main>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav__main">
+                    <div class="nav__logo">
+                        <img class="nav__img" src="./img/logo.svg" alt="">
+                        <p class="nav__text">Миграционный <br><span>центр помощи</span></p>
+                    </div>
+
+                    <button class="nav__btn btn bg-red">Оставить заявку</button>
+                    <button class="nav__btn--mobile btn-mob"><img src="./img/mob-btn.svg" alt=""></button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Первая карточка -->
+        <div style="display: none;" class="first">
+            <div class="container">
+                <div class="first__content">
+                    <h1 class="title__first title-general">Нужно гражданство РФ, <br>
+                        РВП или ВНЖ?</h1>
+                    <p class="first__text">Ответьте на 5 вопросов и получите <br> Гражданство РФ <span>за 2 дня</span>
+                    </p>
+                    <img class="fisrt__mob" src="./img/first-step-content-mob.png" alt="">
+                    <button class="first__btn bg-red btn">Начать опрос</button>
+
+                    <div class="first__logo">
+                        <img src="./img/gos.svg" alt="">
+                        <img src="./img/gerb.svg" alt="">
+                    </div>
+                </div>
+                <img class="first__desctop" src="./img/first-step/img.png" alt="">
+                <img class="first__state" src="./img/state.png" alt="">
+            </div>
+
+            <img class="first__img" src="./img/first-step-content.png" alt="img">
+        </div>
+
+        <div style="display: none;" class="steps">
+            <img class="steps__flag" src="./img/steps-flag.png" alt="flag">
+            <div class="container">
+
+                <div class="steps__content">
+                    <div class="check">
+                        <div class="check-step passed"></div>
+                        <div class="check-step passed"></div>
+                        <div class="check-step passed"></div>
+                        <div class="check-step active"></div>
+                        <div class="check-step"></div>
+                        <div class="check-step"></div>
+                    </div>
+                    <h2 class="steps__title title">Есть ли у Вас близкие родственники,<br>
+                        являющиеся гражданами РФ?</h2>
+
+                    <div class="form">
+                        <div class="form-question">
+                            <label for="radio" class="label-question">
+                                <input checked type="radio" name="radio" class="input-question">
+                                <p class="text-question">Гражданство РФ</p>
+                            </label>
+                            <label for="radio" class="label-question">
+                                <input type="radio" name="radio" class="input-question">
+                                <p class="text-question">РВП</p>
+                            </label>
+                            <label for="radio" class="label-question">
+                                <input type="radio" name="radio" class="input-question">
+                                <p class="text-question">Патент</p>
+                            </label>
+                            <label for="radio" class="label-question">
+                                <input type="radio" name="radio" class="input-question">
+                                <p class="text-question">ВНЖ</p>
+                            </label>
+                            <div class="wrapper-input">
+                                <input placeholder="Введите вашу страну" class="input form__input" type="text">
+                            </div>
+                        </div>
+                        <div class="from-btn">
+                            <button class="prev from-btn__nav btn btn-lighBlue">Назад</button>
+                            <button class="next from-btn__nav btn bg-red">Далее</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Можно это не добавлять в компоменты? -->
+                <div class="steps__logo">
+                    <img src="./img/gos.svg" alt="">
+                    <img src="./img/gerb.svg" alt="">
+                </div>
+
+                <!-- Можно это не добавлять в компоменты? -->
+
+                <div class="steps__advantages">
+                    <div class="advantages__element">
+                        <img src="./img/steps-icon-1.svg" alt="">
+                        <p>15 лет<br>
+                            опыта</p>
+                    </div>
+                    <div class="advantages__element">
+                        <img src="./img/steps-icon-2.svg" alt="">
+                        <p>Юридическая<br>
+                            поддержка</p>
+                    </div>
+                    <div class="advantages__element">
+                        <img src="./img/steps-icon-3.svg" alt="">
+                        <p>Гарантированный<br>
+                            соцпакет</p>
+                    </div>
+                    <div class="advantages__element">
+                        <img src="./img/steps-icon-4.svg" alt="">
+                        <p>Оформили более<br>
+                            30 000 мигрантов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none;" class="last-step">
+            <div class="container">
+
+                <div class="steps__content">
+                    <h2 class="last-step__title title">Оставьте свои контактные данные <span>и получите срочное
+                            оформление</span> миграционных документов
+                    </h2>
+
+                    <form class="form form-last">
+                        <div class="form-last__wrapper">
+                            <div class="wrapper-input">
+                                <input placeholder="Ваше имя" class="input form__input" type="text">
+                            </div>
+                            <div class="wrapper-input">
+                                <input placeholder="Ваш телефон" class="input form__input" type="text">
+                            </div>
+                        </div>
+                        <div class="from-btn form-btn__last">
+                            <button class="prev from-btn__nav btn btn-lighBlue">Назад</button>
+                            <button class="next from-btn__nav btn bg-red">Отправить</button>
+                        </div>
+                        <p class="you-ok">Нажимая на кнопку, вы даете согласие на обработку персональных данных </p>
+                    </form>
+                </div>
+
+                <!-- Можно это не добавлять в компоменты? -->
+                <div class="last-logo">
+                    <img src="./img/gos.svg" alt="">
+                    <img src="./img/gerb.svg" alt="">
+                </div>
+            </div>
+            <img class="china-town" src="./img/last-step-man.png" alt="">
+            <img class="china-town-mob" src="./img/last-step-man.png" alt="">
+        </div>
+
+        <div class="thanks">
+            <div class="thanks__main">
+                <h4 class="title-general thanks__title">Спасибо за ответы!</h4>
+                <p class="thanks__description">Наш юрист свяжется с вами<br>
+                    в ближайшее время</p>
+                <img src="./img/thanks-quiz-icon.svg" alt="">
+            </div>
+        </div>
+
+        <footer>
+            <p class="footer__text">ИНН:2308282792</p>
+            <p class="footer__text">ОГРН:1212300068485</p>
+        </footer>
+    </main>
+
+    <div class="modal">
+        <div class="modal-wrapper">
+            <h2 class="title-general title-modal">Оформите заявку</h2>
+            <p class="modal__descriprion">Для сотрудничества с нами
+                оставьте свои данные</p>
+            <form class="modal-form" action="">
+                <input class="input input-modal" type="text" placeholder="Введите ваше имя">
+                <input class="input input-modal" type="text" placeholder="Введите ваш телефон">
+                <input class="input input-modal" type="text" placeholder="В каком регионе находитесь">
+                <button class="btn bg-red">Подать заявку</button>
+            </form>
+            <button data-modal-closed class="modal-close"><img src="./img/closed.svg" alt=""></button>
+        </div>
+    </div>
+
+    <div style="display:none;" class="modal-thanks">
+        <div class="modal-thanks-wrapper">
+            <h2 class="title-general title-modal">Спасибо за ответы!</h2>
+            <p class="modal__descriprion">Наш менеджер свяжется с вами
+                в ближайшее время</p>
+            <img class="thanks-icon" src="./img/thanks-icon.svg" alt="">
+            <button class="modal-close"><img src="./img/closed.svg" alt=""></button>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
